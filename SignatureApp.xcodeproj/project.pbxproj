@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		89B191BD1ADCDD8B0033E807 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191BC1ADCDD8B0033E807 /* Bolts.framework */; };
-		89B191C31ADCDDA20033E807 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191BE1ADCDDA20033E807 /* Parse.framework */; };
-		89B191C41ADCDDA20033E807 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191BF1ADCDDA20033E807 /* ParseCrashReporting.framework */; };
-		89B191C51ADCDDA20033E807 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191C01ADCDDA20033E807 /* ParseFacebookUtils.framework */; };
-		89B191C61ADCDDA20033E807 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191C11ADCDDA20033E807 /* ParseFacebookUtilsV4.framework */; };
-		89B191C71ADCDDA20033E807 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191C21ADCDDA20033E807 /* ParseUI.framework */; };
 		89B191CD1ADCF3F90033E807 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191C81ADCF3F90033E807 /* Parse.framework */; };
 		89B191CE1ADCF3F90033E807 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191C91ADCF3F90033E807 /* ParseCrashReporting.framework */; };
 		89B191CF1ADCF3F90033E807 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B191CA1ADCF3F90033E807 /* ParseFacebookUtils.framework */; };
@@ -32,6 +27,11 @@
 		9B36A3B01A9BE0890094E43E /* ti5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3AC1A9BE0890094E43E /* ti5.jpg */; };
 		9B36A3B11A9BE0890094E43E /* Warriors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3AD1A9BE0890094E43E /* Warriors.jpg */; };
 		9B36A3B31A9BEC360094E43E /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3B21A9BEC360094E43E /* background.jpg */; };
+		9BCF97391ADDA53600B16059 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97341ADDA53600B16059 /* Parse.framework */; };
+		9BCF973A1ADDA53600B16059 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97351ADDA53600B16059 /* ParseCrashReporting.framework */; };
+		9BCF973B1ADDA53600B16059 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97361ADDA53600B16059 /* ParseFacebookUtils.framework */; };
+		9BCF973C1ADDA53600B16059 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97371ADDA53600B16059 /* ParseFacebookUtilsV4.framework */; };
+		9BCF973D1ADDA53600B16059 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97381ADDA53600B16059 /* ParseUI.framework */; };
 		9BE910DB1A9C6D6C00AA5002 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */; };
 		9BE910DD1A9C6EFF00AA5002 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */; };
 		9BE910E71A9C7A5B00AA5002 /* tangled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */; };
@@ -71,11 +71,6 @@
 
 /* Begin PBXFileReference section */
 		89B191BC1ADCDD8B0033E807 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		89B191BE1ADCDDA20033E807 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../parse-library-1/Parse.framework"; sourceTree = "<group>"; };
-		89B191BF1ADCDDA20033E807 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../parse-library-1/ParseCrashReporting.framework"; sourceTree = "<group>"; };
-		89B191C01ADCDDA20033E807 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../parse-library-1/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		89B191C11ADCDDA20033E807 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../../parse-library-1/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
-		89B191C21ADCDDA20033E807 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../parse-library-1/ParseUI.framework"; sourceTree = "<group>"; };
 		89B191C81ADCF3F90033E807 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		89B191C91ADCF3F90033E807 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		89B191CA1ADCF3F90033E807 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -99,6 +94,11 @@
 		9B36A3AC1A9BE0890094E43E /* ti5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ti5.jpg; sourceTree = "<group>"; };
 		9B36A3AD1A9BE0890094E43E /* Warriors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Warriors.jpg; sourceTree = "<group>"; };
 		9B36A3B21A9BEC360094E43E /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		9BCF97341ADDA53600B16059 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9BCF97351ADDA53600B16059 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		9BCF97361ADDA53600B16059 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		9BCF97371ADDA53600B16059 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		9BCF97381ADDA53600B16059 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tangled.jpg; sourceTree = "<group>"; };
@@ -133,27 +133,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B191D11ADCF3F90033E807 /* ParseUI.framework in Frameworks */,
-				89B191C71ADCDDA20033E807 /* ParseUI.framework in Frameworks */,
 				9BF0F2B11AC517B2003A7D05 /* libsqlite3.dylib in Frameworks */,
 				89B191D01ADCF3F90033E807 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				9BF0F2AF1AC517AA003A7D05 /* SystemConfiguration.framework in Frameworks */,
-				89B191C61ADCDDA20033E807 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				9BF0F2AD1AC517A1003A7D05 /* StoreKit.framework in Frameworks */,
+				9BCF973A1ADDA53600B16059 /* ParseCrashReporting.framework in Frameworks */,
 				9BF0F2AB1AC51799003A7D05 /* Security.framework in Frameworks */,
+				9BCF973D1ADDA53600B16059 /* ParseUI.framework in Frameworks */,
 				9BF0F2A91AC51792003A7D05 /* QuartzCore.framework in Frameworks */,
 				9BF0F2A71AC5178C003A7D05 /* MobileCoreServices.framework in Frameworks */,
 				9BF0F2A51AC51780003A7D05 /* libz.dylib in Frameworks */,
+				9BCF973C1ADDA53600B16059 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				9BF0F2A31AC51768003A7D05 /* CoreLocation.framework in Frameworks */,
+				9BCF973B1ADDA53600B16059 /* ParseFacebookUtils.framework in Frameworks */,
 				89B191CE1ADCF3F90033E807 /* ParseCrashReporting.framework in Frameworks */,
 				89B191CD1ADCF3F90033E807 /* Parse.framework in Frameworks */,
 				9BF0F2A11AC51761003A7D05 /* CoreGraphics.framework in Frameworks */,
 				9BF0F29F1AC5175C003A7D05 /* CFNetwork.framework in Frameworks */,
-				89B191C41ADCDDA20033E807 /* ParseCrashReporting.framework in Frameworks */,
-				89B191C31ADCDDA20033E807 /* Parse.framework in Frameworks */,
+				9BCF97391ADDA53600B16059 /* Parse.framework in Frameworks */,
 				9BF0F29D1AC51756003A7D05 /* AudioToolbox.framework in Frameworks */,
 				89B191BD1ADCDD8B0033E807 /* Bolts.framework in Frameworks */,
 				89B191CF1ADCF3F90033E807 /* ParseFacebookUtils.framework in Frameworks */,
-				89B191C51ADCDDA20033E807 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +267,11 @@
 				9BF0F29E1AC5175C003A7D05 /* CFNetwork.framework */,
 				9BF0F29C1AC51756003A7D05 /* AudioToolbox.framework */,
 				89B191BC1ADCDD8B0033E807 /* Bolts.framework */,
-				89B191BE1ADCDDA20033E807 /* Parse.framework */,
-				89B191BF1ADCDDA20033E807 /* ParseCrashReporting.framework */,
-				89B191C01ADCDDA20033E807 /* ParseFacebookUtils.framework */,
-				89B191C11ADCDDA20033E807 /* ParseFacebookUtilsV4.framework */,
-				89B191C21ADCDDA20033E807 /* ParseUI.framework */,
+				9BCF97341ADDA53600B16059 /* Parse.framework */,
+				9BCF97351ADDA53600B16059 /* ParseCrashReporting.framework */,
+				9BCF97361ADDA53600B16059 /* ParseFacebookUtils.framework */,
+				9BCF97371ADDA53600B16059 /* ParseFacebookUtilsV4.framework */,
+				9BCF97381ADDA53600B16059 /* ParseUI.framework */,
 			);
 			name = ParseFramework;
 			sourceTree = "<group>";
@@ -534,7 +534,7 @@
 					"/Users/yayadrevis/Desktop/parse-library-1",
 				);
 				INFOPLIST_FILE = SignatureApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SignatureApp-Bridging-Header.h";
@@ -555,7 +555,7 @@
 					"/Users/yayadrevis/Desktop/parse-library-1",
 				);
 				INFOPLIST_FILE = SignatureApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SignatureApp-Bridging-Header.h";
