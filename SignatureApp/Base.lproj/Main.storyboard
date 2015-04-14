@@ -177,7 +177,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFa-sO-IMW">
                                 <rect key="frame" x="229" y="558" width="143" height="22"/>
-                                <color key="backgroundColor" patternImage="2AC3BF92-E1D3-423F-81C1-71DB01D2E38F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="128B7507-8F6A-43A0-8921-96E9973F5943" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="968-cR-tkG"/>
                                 </constraints>
@@ -259,7 +259,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-sg-EaJ">
                                 <rect key="frame" x="229" y="555" width="143" height="25"/>
-                                <color key="backgroundColor" patternImage="8A6F16AA-057B-438B-8133-E4D45FAD33CF" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="3684E159-E693-4E87-968B-9EACB03974D2" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="hB1-x8-Dj4"/>
                                 </constraints>
@@ -274,7 +274,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz0-vP-SqU" customClass="CameraButton" customModule="SignatureApp" customModuleProvider="target">
                                 <rect key="frame" x="229" y="522" width="143" height="30"/>
-                                <color key="backgroundColor" patternImage="BD8A45D9-BA22-4A34-A0DE-EA34500CD5BB" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="CBB44464-3363-4394-AABA-807D4458F997" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="cjg-Ps-4ZH"/>
                                 </constraints>
@@ -484,7 +484,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2AC3BF92-E1D3-423F-81C1-71DB01D2E38F" width="256" height="256">
+        <image name="128B7507-8F6A-43A0-8921-96E9973F5943" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -4930,7 +4930,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="8A6F16AA-057B-438B-8133-E4D45FAD33CF" width="256" height="256">
+        <image name="3684E159-E693-4E87-968B-9EACB03974D2" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -9376,7 +9376,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="BD8A45D9-BA22-4A34-A0DE-EA34500CD5BB" width="256" height="256">
+        <image name="CBB44464-3363-4394-AABA-807D4458F997" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
