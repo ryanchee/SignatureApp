@@ -10,31 +10,31 @@
 	<string>SignatureApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>341BD0AE2D1F617EC04D9B4CB26B12AA7C2CDBA6</key>
-		<string>https://github.com/timacorda/date-ideas.git</string>
+		<key>C410F89251C97F8F60D13198C9493FD95AEE76B5</key>
+		<string>https://github.com/ryanchee/SignatureApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SignatureApp/SignatureApp.xcodeproj</string>
+	<string>SignatureApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>341BD0AE2D1F617EC04D9B4CB26B12AA7C2CDBA6</key>
-		<string>../../..</string>
+		<key>C410F89251C97F8F60D13198C9493FD95AEE76B5</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/timacorda/date-ideas.git</string>
+	<string>https://github.com/ryanchee/SignatureApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>341BD0AE2D1F617EC04D9B4CB26B12AA7C2CDBA6</string>
+	<string>C410F89251C97F8F60D13198C9493FD95AEE76B5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>341BD0AE2D1F617EC04D9B4CB26B12AA7C2CDBA6</string>
+			<string>C410F89251C97F8F60D13198C9493FD95AEE76B5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>IOSDev</string>
+			<string>SignatureApp</string>
 		</dict>
 	</array>
 </dict>
