@@ -98,13 +98,13 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "PhotoEdit" {
-            let controller: PhotoSign = segue.destinationViewController as PhotoSign
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+ //       if segue.identifier == "PhotoEdit" {
+  //          let controller: PhotoSign = segue.destinationViewController as PhotoSign
   //          controller.photo = imageSelected
             //            controller.num = sender.tag
-        }
-    }
+   //     }
+  //  }
 
     /*
     // MARK: - Navigation

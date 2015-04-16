@@ -48,6 +48,11 @@ class ViewController: UIViewController {
            }
         }
         
+        if identifier == "Register" {
+            
+            
+        }
+        
         // by default, transition
         return true
     }

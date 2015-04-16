@@ -52,6 +52,7 @@ class PhotoSign: UIView {
     }
     
     required init(coder aDecoder: NSCoder!) {
+        println("loaded screen sign")
         super.init(coder: aDecoder)
     }
     
