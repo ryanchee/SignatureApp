@@ -13,16 +13,30 @@ class RegistrationViewController: UIViewController {
     @IBOutlet var usernameField : UITextField!
     @IBOutlet var passField : UITextField!
     @IBAction func registerButton() {
-        PFUser.logInWithUsernameInBackground(usernameField.text, password:passField.text) {
-            (user: PFUser!, error: NSError!) -> Void in
-            if user != nil {
-                // Do stuff after successful login.
-                println("\(self.usernameField.text)")
-                self.performSegueWithIdentifier("segueTest", sender: self)
+        var user = PFUser()
+        user.username = usernameField.text
+        user.password = passField.text
+        user.email = "email2@example.com"
+        // other fields can be set just like with PFObject
+        
+        user.signUpInBackgroundWithBlock {
+            (succeeded: Bool!, error: NSError!) -> Void in
+            if error == nil {
+                // Hooray! Let them use the app now.
+                let alert = UIAlertView()
+                alert.title = "Registration Successful!"
+                alert.message = "You will now be logged in."
+                alert.addButtonWithTitle("Ok")
+                alert.show()
             } else {
-                // The login failed. Check error to see why.
-                println("nan")
+                let alert = UIAlertView()
+                alert.title = "Missing Fields"
+                alert.message = "One or more of the fields are blank."
+                alert.addButtonWithTitle("Ok")
+                alert.show()
+                // Show the errorString somewhere and let the user try again.
             }
+        
         }
     }
     

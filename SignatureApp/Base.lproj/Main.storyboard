@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bto-wX-ate">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bto-wX-ate">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -178,7 +178,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFa-sO-IMW">
                                 <rect key="frame" x="229" y="558" width="143" height="22"/>
-                                <color key="backgroundColor" patternImage="CBAC2B18-859A-4EAC-91BF-072E86C3E5DB" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="E7B4E37E-E9BE-4CD7-8817-278DA175596A" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="968-cR-tkG"/>
                                 </constraints>
@@ -260,7 +260,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-sg-EaJ">
                                 <rect key="frame" x="229" y="555" width="143" height="25"/>
-                                <color key="backgroundColor" patternImage="6E180BA6-CAC0-4915-B6CB-AE30C4A10303" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="602E17E2-773B-49B3-952B-18E047ED6460" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="hB1-x8-Dj4"/>
                                 </constraints>
@@ -275,7 +275,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz0-vP-SqU" customClass="CameraButton" customModule="SignatureApp" customModuleProvider="target">
                                 <rect key="frame" x="229" y="522" width="143" height="30"/>
-                                <color key="backgroundColor" patternImage="C6FF6BCF-4833-4E91-8D5B-5E09864F14A7" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="BB28F605-D82E-4A34-9524-BD9558922A69" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="cjg-Ps-4ZH"/>
                                 </constraints>
@@ -404,6 +404,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-kO-qdY">
+                                <rect key="frame" x="303" y="323" width="128" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye0-kx-ye3">
                                 <rect key="frame" x="169" y="323" width="126" height="30"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="0.78000000000000003" colorSpace="calibratedRGB"/>
@@ -417,15 +426,6 @@
                                 <connections>
                                     <action selector="registerButton" destination="6Ni-1Q-hGJ" eventType="touchDown" id="Kpt-rP-JWt"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-kO-qdY">
-                                <rect key="frame" x="303" y="323" width="128" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Facebook">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -492,7 +492,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="6E180BA6-CAC0-4915-B6CB-AE30C4A10303" width="256" height="256">
+        <image name="602E17E2-773B-49B3-952B-18E047ED6460" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -4938,7 +4938,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="C6FF6BCF-4833-4E91-8D5B-5E09864F14A7" width="256" height="256">
+        <image name="BB28F605-D82E-4A34-9524-BD9558922A69" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -9384,7 +9384,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="CBAC2B18-859A-4EAC-91BF-072E86C3E5DB" width="256" height="256">
+        <image name="E7B4E37E-E9BE-4CD7-8817-278DA175596A" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
