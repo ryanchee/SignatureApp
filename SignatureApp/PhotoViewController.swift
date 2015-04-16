@@ -82,9 +82,43 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         performSegueWithIdentifier("PhotoEdit", sender: self)
     }
     
-/*    override func viewDidAppear(animated: Bool) {
-        println("should be reloading\n");
-    }*/
+    func populateAlbum() {
+        var currentUser = PFUser.currentUser().username
+        var query = PFQuery(className:"UserPhoto")
+        query.whereKey("Name", equalTo:"ronald")
+        query.findObjectsInBackgroundWithBlock ({(objects:[AnyObject]!, error: NSError!) in
+            if(error == nil){
+                
+                let imageObjects = objects as [PFObject]
+                
+                for object in objects {
+                    
+                    let thumbNail = object["Picture"] as PFFile
+                    println("we got \(objects.count) images!")
+                    thumbNail.getDataInBackgroundWithBlock({
+                        (imageData: NSData!, error: NSError!) -> Void in
+                        if (error == nil) {
+                            let image = UIImage(data:imageData)
+                            //image object implementation
+                            self.photoLibraryImages.append(image!)
+                        }
+                        
+                    })//getDataInBackgroundWithBlock - end
+                    
+                }//for - end
+                
+            }
+            else{
+                println("Error in retrieving \(error)")
+            }
+            
+        })//findObjectsInBackgroundWithblock - end
+        
+        
+    }
+    override func viewWillAppear(animated: Bool) {
+        populateAlbum()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
