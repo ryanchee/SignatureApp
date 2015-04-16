@@ -22,6 +22,22 @@ class ViewController: UIViewController {
                 self.performSegueWithIdentifier("segueTest", sender: self)
             } else {
                 // The login failed. Check error to see why.
+                if (self.usernameField.text.isEmpty) {
+                    
+                    let alert = UIAlertView()
+                    alert.title = "Missing Fields"
+                    alert.message = "One or more of the fields are blank."
+                    alert.addButtonWithTitle("Ok")
+                    alert.show()
+                }
+                else {
+                    let alert = UIAlertView()
+                    alert.title = "Login Error"
+                    alert.message = "Username or Password is Incorrect"
+                    alert.addButtonWithTitle("Ok")
+                    alert.show()
+                }
+
                 println("nan")
             }
         }
