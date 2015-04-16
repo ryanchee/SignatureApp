@@ -51,6 +51,15 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         dismissViewControllerAnimated(true, completion: nil) //5
         self.collectionView.reloadData()
         println("AFTER there are \(photoLibraryImages.count) images")
+        
+        let imageData = UIImagePNGRepresentation(chosenImage)
+        let imageFile = PFFile(name:"image.png", data: imageData)
+        
+        
+        var userPhoto = PFObject(className:"UserPhoto")
+        userPhoto["Name"] = "My trip to Hawaii!"
+        userPhoto["Picture"] = imageFile
+        userPhoto.saveInBackgroundWithTarget(nil, selector: nil)
 
     }
 
