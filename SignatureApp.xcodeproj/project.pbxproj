@@ -32,6 +32,7 @@
 		9BCF973B1ADDA53600B16059 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97361ADDA53600B16059 /* ParseFacebookUtils.framework */; };
 		9BCF973C1ADDA53600B16059 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97371ADDA53600B16059 /* ParseFacebookUtilsV4.framework */; };
 		9BCF973D1ADDA53600B16059 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCF97381ADDA53600B16059 /* ParseUI.framework */; };
+		9BCF977A1ADF91C000B16059 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */; };
 		9BE910DB1A9C6D6C00AA5002 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */; };
 		9BE910DD1A9C6EFF00AA5002 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */; };
 		9BE910E71A9C7A5B00AA5002 /* tangled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */; };
@@ -99,6 +100,7 @@
 		9BCF97361ADDA53600B16059 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		9BCF97371ADDA53600B16059 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		9BCF97381ADDA53600B16059 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tangled.jpg; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				9B22BA931A9BC7800042B037 /* AppDelegate.swift */,
 				9B22BA981A9BC7810042B037 /* ViewController.swift */,
 				9B22BA9A1A9BC7810042B037 /* Main.storyboard */,
+				9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */,
 				9BF154791A9DBD6F003267F1 /* CameraButton.swift */,
 				9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */,
 				9B36A3A41A9BD3B20094E43E /* AlbumViewCell.swift */,
@@ -394,6 +397,7 @@
 				9B22BA991A9BC7810042B037 /* ViewController.swift in Sources */,
 				9B36A3A91A9BDA190094E43E /* AlbumViewController.swift in Sources */,
 				9BF1547A1A9DBD6F003267F1 /* CameraButton.swift in Sources */,
+				9BCF977A1ADF91C000B16059 /* RegistrationViewController.swift in Sources */,
 				9B22BA971A9BC7810042B037 /* SignatureApp.xcdatamodeld in Sources */,
 				9B36A3A51A9BD3B20094E43E /* AlbumViewCell.swift in Sources */,
 				9BE910DD1A9C6EFF00AA5002 /* PhotoViewController.swift in Sources */,

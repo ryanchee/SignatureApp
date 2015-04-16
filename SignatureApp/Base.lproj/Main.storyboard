@@ -178,7 +178,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFa-sO-IMW">
                                 <rect key="frame" x="229" y="558" width="143" height="22"/>
-                                <color key="backgroundColor" patternImage="ADBB50C7-5889-473F-8767-61ACF508BD9E" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="CBAC2B18-859A-4EAC-91BF-072E86C3E5DB" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="968-cR-tkG"/>
                                 </constraints>
@@ -260,7 +260,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-sg-EaJ">
                                 <rect key="frame" x="229" y="555" width="143" height="25"/>
-                                <color key="backgroundColor" patternImage="B2134DA5-9D6A-4E55-85B4-E67D907145F4" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="6E180BA6-CAC0-4915-B6CB-AE30C4A10303" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="hB1-x8-Dj4"/>
                                 </constraints>
@@ -275,7 +275,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz0-vP-SqU" customClass="CameraButton" customModule="SignatureApp" customModuleProvider="target">
                                 <rect key="frame" x="229" y="522" width="143" height="30"/>
-                                <color key="backgroundColor" patternImage="FFD3162A-CD37-4120-9B7B-787A5DBCDF10" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="C6FF6BCF-4833-4E91-8D5B-5E09864F14A7" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="cjg-Ps-4ZH"/>
                                 </constraints>
@@ -382,7 +382,7 @@
         <!--Registration-->
         <scene sceneID="r8k-nz-mih">
             <objects>
-                <viewController id="6Ni-1Q-hGJ" sceneMemberID="viewController">
+                <viewController id="6Ni-1Q-hGJ" customClass="RegistrationViewController" customModule="SignatureApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ifi-wy-xts"/>
                         <viewControllerLayoutGuide type="bottom" id="l3o-Vc-vC7"/>
@@ -414,6 +414,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButton" destination="6Ni-1Q-hGJ" eventType="touchDown" id="Kpt-rP-JWt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-kO-qdY">
                                 <rect key="frame" x="303" y="323" width="128" height="30"/>
@@ -442,6 +445,10 @@
                     <navigationItem key="navigationItem" title="Registration" id="rDo-JY-7PE">
                         <barButtonItem key="backBarButtonItem" title="Cancel" id="cLC-uy-34P"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="passField" destination="Bni-xW-ZdQ" id="NEX-YK-5BM"/>
+                        <outlet property="usernameField" destination="Qf6-kS-UPa" id="dYP-s1-k6U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2IO-u5-Odt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -485,7 +492,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ADBB50C7-5889-473F-8767-61ACF508BD9E" width="256" height="256">
+        <image name="6E180BA6-CAC0-4915-B6CB-AE30C4A10303" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -4931,7 +4938,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="B2134DA5-9D6A-4E55-85B4-E67D907145F4" width="256" height="256">
+        <image name="C6FF6BCF-4833-4E91-8D5B-5E09864F14A7" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -9377,7 +9384,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="FFD3162A-CD37-4120-9B7B-787A5DBCDF10" width="256" height="256">
+        <image name="CBAC2B18-859A-4EAC-91BF-072E86C3E5DB" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW

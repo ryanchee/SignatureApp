@@ -49,12 +49,17 @@ class ViewController: UIViewController {
         }
         
         if identifier == "Register" {
-            
-            
+            self.performSegueWithIdentifier("Register", sender: self)
         }
         
         // by default, transition
         return true
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Register" {
+            let secondViewController = segue.destinationViewController as RegistrationViewController
+        }
     }
     
     override func viewDidLoad() {
