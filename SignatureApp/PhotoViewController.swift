@@ -57,7 +57,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         
         var userPhoto = PFObject(className:"UserPhoto")
-        userPhoto["Name"] = "My trip to Hawaii!"
+        userPhoto["Name"] = PFUser.currentUser().username
         userPhoto["Picture"] = imageFile
         userPhoto.saveInBackgroundWithTarget(nil, selector: nil)
 
