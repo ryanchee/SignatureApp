@@ -101,12 +101,13 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                             let image = UIImage(data:imageData)
                             //image object implementation
                             self.photoLibraryImages.append(image!)
+                            self.collectionView.reloadData()
                         }
-                        
+                        			
                     })//getDataInBackgroundWithBlock - end
                     
                 }//for - end
-                
+               // self.collectionView.reloadData()
             }
             else{
                 println("Error in retrieving \(error)")
@@ -116,14 +117,12 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         
     }
-    override func viewWillAppear(animated: Bool) {
-        populateAlbum()
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         println("should load\n");
         image.delegate = self
+        populateAlbum()
         // Do any additional setup after loading the view.
     }
 
