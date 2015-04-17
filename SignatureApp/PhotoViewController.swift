@@ -79,7 +79,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         println("PhotoViewCell \(indexPath.row) selected");
         let cell: PhotoCell = collectionView.cellForItemAtIndexPath(indexPath) as PhotoCell
       //  imageSelected = cell.photoCell.image!
-        performSegueWithIdentifier("PhotoEdit", sender: self)
+//        performSegueWithIdentifier("PhotoEdit", sender: self)
     }
     
     func populateAlbum() {

@@ -16,7 +16,7 @@ class RegistrationViewController: UIViewController {
         var user = PFUser()
         user.username = usernameField.text
         user.password = passField.text
-        user.email = "email2@example.com"
+        user.email = "email@example.com"
         // other fields can be set just like with PFObject
         
         user.signUpInBackgroundWithBlock {
@@ -42,6 +42,7 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("register view controller loaded")
 
         // Do any additional setup after loading the view.
     }
