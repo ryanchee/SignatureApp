@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bto-wX-ate">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bto-wX-ate">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -178,7 +178,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFa-sO-IMW">
                                 <rect key="frame" x="229" y="558" width="143" height="22"/>
-                                <color key="backgroundColor" patternImage="2A3EE0C6-7BFA-4B9D-93E8-067CBEFE1BAB" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="FB6C34E8-20AC-4884-990C-AC0E08E10FE8" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="968-cR-tkG"/>
                                 </constraints>
@@ -202,6 +202,9 @@
                             <constraint firstItem="RH6-sr-65k" firstAttribute="bottom" secondItem="Miz-2j-dZd" secondAttribute="top" id="pXX-Y4-X2u"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionViewTable" destination="RH6-sr-65k" id="M4Y-aO-JPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYh-D0-7hR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,7 +263,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-sg-EaJ">
                                 <rect key="frame" x="229" y="555" width="143" height="25"/>
-                                <color key="backgroundColor" patternImage="F73BF9AC-0733-4AF9-9A22-9A9D6D82300A" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D4D1839F-7836-4D15-8A89-4A68494ACAE7" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="hB1-x8-Dj4"/>
                                 </constraints>
@@ -275,7 +278,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz0-vP-SqU" customClass="CameraButton" customModule="SignatureApp" customModuleProvider="target">
                                 <rect key="frame" x="229" y="522" width="143" height="30"/>
-                                <color key="backgroundColor" patternImage="2F730F91-96B2-4726-9B26-88DA4FABFDC5" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="6C03420C-852F-4DE1-AD58-3267B55D8619" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="cjg-Ps-4ZH"/>
                                 </constraints>
@@ -472,27 +475,9 @@
             </objects>
             <point key="canvasLocation" x="837" y="26"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Lbq-xh-GA8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Usg-yw-YJo" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZSb-1j-nbo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="6Ni-1Q-hGJ" kind="relationship" relationship="rootViewController" id="7Wb-2P-sNd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k1I-5H-0lT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1555" y="705"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="2A3EE0C6-7BFA-4B9D-93E8-067CBEFE1BAB" width="256" height="256">
+        <image name="6C03420C-852F-4DE1-AD58-3267B55D8619" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -4938,7 +4923,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="2F730F91-96B2-4726-9B26-88DA4FABFDC5" width="256" height="256">
+        <image name="D4D1839F-7836-4D15-8A89-4A68494ACAE7" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -9384,7 +9369,7 @@ DyYABA8uAAQPMQAEDzYABA9FAAQPSQAED1AABA9YAAQPZQAED2oABA9sAAQPbgAED3MABA97AAQPfgAE
 D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
-        <image name="F73BF9AC-0733-4AF9-9A22-9A9D6D82300A" width="256" height="256">
+        <image name="FB6C34E8-20AC-4884-990C-AC0E08E10FE8" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -13832,7 +13817,4 @@ D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
         </image>
         <image name="background.jpg" width="750" height="1334"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="tNm-sK-25Z"/>
-    </inferredMetricsTieBreakers>
 </document>

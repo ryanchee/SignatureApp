@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet var passField : UITextField!
     @IBAction func loginButton() {
         
-        PFUser.logInWithUsernameInBackground(usernameField.text, password:passField.text) {
-            (user: PFUser!, error: NSError!) -> Void in
+        //PFUser.logInWithUsernameInBackground(usernameField.text, password:passField.text) {
+//            (user: PFUser!, error: NSError!) -> Void in
+        PFUser.logInWithUsernameInBackground(usernameField.text as String, password: passField.text as String) {
+            (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
                 // Do stuff after successful login.
                 println("\(self.usernameField.text)")

@@ -15,7 +15,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     var tableImages: [String] = ["mulan.jpg", "lilo.jpg", "anna.jpg", "timon.jpg", "jafar.jpg", "elsa.jpg", "pluto.jpg", "jack.jpg", "tangled.jpg"]
     var iter = 0
     var photoLibraryImages: [UIImage] = []
-    //var imageSelected: UIImage
+    var imageSelected: UIImage?
     
     @IBOutlet var collectionView :UICollectionView!
     
@@ -45,7 +45,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         println("we got an image\n");
-        let chosenImage = info[UIImagePickerControllerOriginalImage] as UIImage //2
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
         println("BEFORE there are \(photoLibraryImages.count) images")
         photoLibraryImages.append(chosenImage)
         dismissViewControllerAnimated(true, completion: nil) //5
@@ -57,7 +57,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         
         var userPhoto = PFObject(className:"UserPhoto")
-        userPhoto["Name"] = PFUser.currentUser().username
+        userPhoto["Name"] = PFUser.currentUser()!.username
         userPhoto["Picture"] = imageFile
         userPhoto.saveInBackgroundWithTarget(nil, selector: nil)
 
@@ -69,7 +69,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-            var cell: PhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as PhotoCell
+            var cell: PhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoCell
             cell.photoCell.image = photoLibraryImages[indexPath.row]
             iter++
             return cell
@@ -77,28 +77,28 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         collectionView.deselectItemAtIndexPath(indexPath, animated: true)
         println("PhotoViewCell \(indexPath.row) selected");
-        let cell: PhotoCell = collectionView.cellForItemAtIndexPath(indexPath) as PhotoCell
+        let cell: PhotoCell = collectionView.cellForItemAtIndexPath(indexPath) as! PhotoCell
       //  imageSelected = cell.photoCell.image!
 //        performSegueWithIdentifier("PhotoEdit", sender: self)
     }
     
     func populateAlbum() {
-        var currentUser = PFUser.currentUser().username
+        var currentUser = PFUser.currentUser()!.username
         var query = PFQuery(className:"UserPhoto")
         query.whereKey("Name", equalTo:"ronald")
-        query.findObjectsInBackgroundWithBlock ({(objects:[AnyObject]!, error: NSError!) in
+        query.findObjectsInBackgroundWithBlock ({(objects:[AnyObject]?, error: NSError?) in
             if(error == nil){
                 
-                let imageObjects = objects as [PFObject]
+                let imageObjects = objects as! [PFObject]
                 
-                for object in objects {
+                for object in imageObjects {
                     
-                    let thumbNail = object["Picture"] as PFFile
-                    println("we got \(objects.count) images!")
+                    let thumbNail = object["Picture"] as! PFFile
+                    println("we got \(imageObjects.count) images!")
                     thumbNail.getDataInBackgroundWithBlock({
-                        (imageData: NSData!, error: NSError!) -> Void in
+                        (imageData: NSData?, error: NSError?) -> Void in
                         if (error == nil) {
-                            let image = UIImage(data:imageData)
+                            let image = UIImage(data:imageData!)
                             //image object implementation
                             self.photoLibraryImages.append(image!)
                             self.collectionView.reloadData()
@@ -131,13 +131,13 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
- //       if segue.identifier == "PhotoEdit" {
-  //          let controller: PhotoSign = segue.destinationViewController as PhotoSign
-  //          controller.photo = imageSelected
-            //            controller.num = sender.tag
-   //     }
-  //  }
+/*    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PhotoEdit" {
+            let controller: PhotoSign = segue.destinationViewController as PhotoSign
+            controller.photo = imageSelected
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }*/
 
     /*
     // MARK: - Navigation

@@ -51,24 +51,43 @@ class PhotoSign: UIView {
         self.drawColor = color
     }
     
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         println("loaded screen sign")
         super.init(coder: aDecoder)
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        lastPoint = touches.anyObject()?.locationInView(self)
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if let touch = touches.first as? UITouch {
+            lastPoint = touch.locationInView(self)
+        }
+        super.touchesBegan(touches , withEvent:event)
     }
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        var newPoint = touches.anyObject()?.locationInView(self)
-        if rainbowButton == 1 {
-            drawColor = getRandomColor()
+//    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+//        lastPoint = touches.anyObject()?.locationInView(self)
+//    }
+//
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if let touch = touches.first as? UITouch {
+            var newPoint = touch.locationInView(self)
+            if rainbowButton == 1 {
+                drawColor = getRandomColor()
+            }
+            lines.append(Line(start: lastPoint, end: newPoint, color: drawColor))
+            lastPoint = newPoint
+            self.setNeedsDisplay()
         }
-        lines.append(Line(start: lastPoint, end: newPoint!, color: drawColor))
-        lastPoint = newPoint
-        self.setNeedsDisplay()
     }
+    
+   // override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+//        var newPoint = touches.anyObject()?.locationInView(self)
+//        if rainbowButton == 1 {
+//            drawColor = getRandomColor()
+//        }
+//        lines.append(Line(start: lastPoint, end: newPoint!, color: drawColor))
+//        lastPoint = newPoint
+//        self.setNeedsDisplay()
+   // }
     
     override func drawRect(rect: CGRect) {
         var context = UIGraphicsGetCurrentContext()

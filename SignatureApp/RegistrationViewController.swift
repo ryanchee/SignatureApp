@@ -20,7 +20,7 @@ class RegistrationViewController: UIViewController {
         // other fields can be set just like with PFObject
         
         user.signUpInBackgroundWithBlock {
-            (succeeded: Bool!, error: NSError!) -> Void in
+            (succeeded, error) -> Void in
             if error == nil {
                 // Hooray! Let them use the app now.
                 let alert = UIAlertView()
