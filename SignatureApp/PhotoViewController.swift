@@ -10,9 +10,9 @@ import UIKit
 
 class PhotoViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var photoCollectionView: UICollectionView!
     let image = UIImagePickerController()
     let imageNum = 0;
-    var tableImages: [String] = ["mulan.jpg", "lilo.jpg", "anna.jpg", "timon.jpg", "jafar.jpg", "elsa.jpg", "pluto.jpg", "jack.jpg", "tangled.jpg"]
     var iter = 0
     var photoLibraryImages: [UIImage] = []
     var imageSelected: UIImage?
@@ -170,13 +170,14 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-/*    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "PhotoEdit" {
-            let controller: PhotoSign = segue.destinationViewController as PhotoSign
-            controller.photo = imageSelected
-            self.navigationController?.pushViewController(controller, animated: true)
+            let dest = segue.destinationViewController as! PhotoSignViewController
+            let cell = sender as! PhotoCell
+            let index = self.photoCollectionView!.indexPathForCell(cell)?.row
+            dest.photo = photoLibraryImages[index!]
         }
-    }*/
+    }
 
     /*
     // MARK: - Navigation

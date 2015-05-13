@@ -65,7 +65,7 @@
                                     <action selector="loginButton" destination="c5e-jQ-VLc" eventType="touchDown" id="fe6-wV-Irq"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUl-sP-E8Q">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ronald" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uUl-sP-E8Q">
                                 <rect key="frame" x="169" y="242" width="262" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="rgB-gN-9Au"/>
@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7OF-be-lHd">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rosales2" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7OF-be-lHd">
                                 <rect key="frame" x="169" y="280" width="262" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -243,7 +243,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="photoCell" destination="uvM-rP-ojV" id="uf7-jS-ar5"/>
-                                            <segue destination="LLf-1Z-HXC" kind="show" identifier="" id="9NR-W0-BJ3"/>
+                                            <segue destination="LLf-1Z-HXC" kind="show" identifier="PhotoEdit" id="9NR-W0-BJ3"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -270,6 +270,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="tqg-xt-iW3" id="cYx-vT-o9B"/>
+                        <outlet property="photoCollectionView" destination="tqg-xt-iW3" id="KAE-Lq-Ryz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfP-Pf-2hN" userLabel="First Responder" sceneMemberID="firstResponder"/>

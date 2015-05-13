@@ -9,6 +9,8 @@
 import UIKit
 
 class PhotoSignViewController: UIViewController {
+    var photo: UIImage?
+    
     @IBOutlet var photoSignView: PhotoSign?
     
     @IBAction func clearTapped() {
@@ -71,11 +73,6 @@ class PhotoSignViewController: UIViewController {
         else {
             let actionSheetController: UIAlertController = UIAlertController(title: "Error", message: "No signature.", preferredStyle: .Alert)
             
-            //Create and add the Cancel action
-            let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
-                //Do some stuff
-            }
-            actionSheetController.addAction(cancelAction)
             //Create and an option action
             let nextAction: UIAlertAction = UIAlertAction(title: "Ok", style: .Default) { action -> Void in
             }
@@ -96,6 +93,7 @@ class PhotoSignViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        photoSignView!.backgroundColor = UIColor(patternImage: photo!.imageWithAlignmentRectInsets(UIEdgeInsets(top:10,left:0,bottom:10,right:0)))
         // Do any additional setup after loading the view.
     }
 
