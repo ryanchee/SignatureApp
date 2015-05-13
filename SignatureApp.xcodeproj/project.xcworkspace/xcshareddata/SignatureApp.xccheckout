@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3CB1F873-C997-440E-A770-901C5B11C011</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SignatureApp</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>341BD0AE2D1F617EC04D9B4CB26B12AA7C2CDBA6</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/ryanchee/SignatureApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SignatureApp.xcodeproj</string>
+	<string>SignatureApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>341BD0AE2D1F617EC04D9B4CB26B12AA7C2CDBA6</key>

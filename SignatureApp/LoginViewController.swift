@@ -8,15 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet var usernameField : UITextField!
     @IBOutlet var passField : UITextField!
     @IBAction func loginButton() {
         
-        //PFUser.logInWithUsernameInBackground(usernameField.text, password:passField.text) {
-//            (user: PFUser!, error: NSError!) -> Void in
-        PFUser.logInWithUsernameInBackground(usernameField.text as String, password: passField.text as String) {
+    PFUser.logInWithUsernameInBackground(usernameField.text as String, password: passField.text as String) {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
                 // Do stuff after successful login.
@@ -84,6 +82,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        passField.secureTextEntry = true
     }
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool {

@@ -16,7 +16,40 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     var iter = 0
     var photoLibraryImages: [UIImage] = []
     var imageSelected: UIImage?
+    var albumName: String?
     
+    @IBAction func addPhoto(sender: AnyObject) {
+        let alertController = UIAlertController(title: "Choose photo from...", message: nil, preferredStyle: .ActionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            println(action)
+        }
+        alertController.addAction(cancelAction)
+        let oneAction = UIAlertAction(title: "Camera", style: .Default) { (_) in
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+                picker.sourceType = .Camera
+            }
+            else {
+                picker.sourceType = .PhotoLibrary
+            }
+            self.presentViewController(picker, animated: true, completion: nil)
+        }
+        let twoAction = UIAlertAction(title: "Photo Album", style: .Default) { (_) in
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = .PhotoLibrary
+            picker.allowsEditing = false
+            self.presentViewController(picker, animated: true, completion: nil)
+        }
+
+        alertController.addAction(oneAction)
+        alertController.addAction(twoAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
+
+    }
+
     @IBOutlet var collectionView :UICollectionView!
     
     @IBAction func cameraButton() {
@@ -39,6 +72,10 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         presentViewController(picker, animated: true, completion: nil)
     }
     
+    @IBAction func unwindToPhotoViewController(segue: UIStoryboardSegue) {
+        println("here!")
+    }
+    
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
@@ -58,6 +95,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         var userPhoto = PFObject(className:"UserPhoto")
         userPhoto["Name"] = PFUser.currentUser()!.username
+        userPhoto["AlbumName"] = self.albumName
         userPhoto["Picture"] = imageFile
         userPhoto.saveInBackgroundWithTarget(nil, selector: nil)
 
@@ -82,10 +120,11 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
 //        performSegueWithIdentifier("PhotoEdit", sender: self)
     }
     
-    func populateAlbum() {
+    func populateAlbum(albumName: String) {
         var currentUser = PFUser.currentUser()!.username
         var query = PFQuery(className:"UserPhoto")
         query.whereKey("Name", equalTo:"ronald")
+        query.whereKey("AlbumName", equalTo:albumName)
         query.findObjectsInBackgroundWithBlock ({(objects:[AnyObject]?, error: NSError?) in
             if(error == nil){
                 
@@ -122,7 +161,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         super.viewDidLoad()
         println("should load\n");
         image.delegate = self
-        populateAlbum()
+        populateAlbum(self.albumName!)
         // Do any additional setup after loading the view.
     }
 

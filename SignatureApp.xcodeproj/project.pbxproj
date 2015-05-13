@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B22BA941A9BC7800042B037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22BA931A9BC7800042B037 /* AppDelegate.swift */; };
 		9B22BA971A9BC7810042B037 /* SignatureApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B22BA951A9BC7810042B037 /* SignatureApp.xcdatamodeld */; };
-		9B22BA991A9BC7810042B037 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22BA981A9BC7810042B037 /* ViewController.swift */; };
-		9B22BA9C1A9BC7810042B037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B22BA9A1A9BC7810042B037 /* Main.storyboard */; };
+		9B22BA991A9BC7810042B037 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22BA981A9BC7810042B037 /* LoginViewController.swift */; };
 		9B22BA9E1A9BC7810042B037 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B22BA9D1A9BC7810042B037 /* Images.xcassets */; };
 		9B22BAA11A9BC7810042B037 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B22BA9F1A9BC7810042B037 /* LaunchScreen.xib */; };
 		9B22BAAD1A9BC7810042B037 /* SignatureAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22BAAC1A9BC7810042B037 /* SignatureAppTests.swift */; };
@@ -21,6 +20,8 @@
 		9B36A3B01A9BE0890094E43E /* ti5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3AC1A9BE0890094E43E /* ti5.jpg */; };
 		9B36A3B11A9BE0890094E43E /* Warriors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3AD1A9BE0890094E43E /* Warriors.jpg */; };
 		9B36A3B31A9BEC360094E43E /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3B21A9BEC360094E43E /* background.jpg */; };
+		9B5C19C71AF816960055D7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5C19C61AF816960055D7C3 /* Main.storyboard */; };
+		9B5C19CD1AFAE67F0055D7C3 /* PhotoSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C19CC1AFAE67F0055D7C3 /* PhotoSignViewController.swift */; };
 		9B7FADFF1AF1A2D000805EDE /* AlbumCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FADFE1AF1A2D000805EDE /* AlbumCover.swift */; };
 		9B8639F31AF1B69100D69AED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8639E71AF1ACDC00D69AED /* Bolts.framework */; };
 		9B8639F41AF1B69100D69AED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8639E81AF1ACDC00D69AED /* Parse.framework */; };
@@ -53,7 +54,6 @@
 		9BF0F2AD1AC517A1003A7D05 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF0F2AC1AC517A1003A7D05 /* StoreKit.framework */; };
 		9BF0F2AF1AC517AA003A7D05 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF0F2AE1AC517AA003A7D05 /* SystemConfiguration.framework */; };
 		9BF0F2B11AC517B2003A7D05 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF0F2B01AC517B2003A7D05 /* libsqlite3.dylib */; };
-		9BF1547A1A9DBD6F003267F1 /* CameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF154791A9DBD6F003267F1 /* CameraButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +71,7 @@
 		9B22BA921A9BC7800042B037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B22BA931A9BC7800042B037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B22BA961A9BC7810042B037 /* SignatureApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SignatureApp.xcdatamodel; sourceTree = "<group>"; };
-		9B22BA981A9BC7810042B037 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B22BA9B1A9BC7810042B037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B22BA981A9BC7810042B037 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B22BA9D1A9BC7810042B037 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B22BAA01A9BC7810042B037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9B22BAA61A9BC7810042B037 /* SignatureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignatureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +84,8 @@
 		9B36A3AC1A9BE0890094E43E /* ti5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ti5.jpg; sourceTree = "<group>"; };
 		9B36A3AD1A9BE0890094E43E /* Warriors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Warriors.jpg; sourceTree = "<group>"; };
 		9B36A3B21A9BEC360094E43E /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		9B5C19C61AF816960055D7C3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9B5C19CC1AFAE67F0055D7C3 /* PhotoSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSignViewController.swift; sourceTree = "<group>"; };
 		9B7FADFE1AF1A2D000805EDE /* AlbumCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCover.swift; sourceTree = "<group>"; };
 		9B8639E71AF1ACDC00D69AED /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "parse-library-1.7.2/Bolts.framework"; sourceTree = "<group>"; };
 		9B8639E81AF1ACDC00D69AED /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "parse-library-1.7.2/Parse.framework"; sourceTree = "<group>"; };
@@ -118,7 +119,6 @@
 		9BF0F2AC1AC517A1003A7D05 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9BF0F2AE1AC517AA003A7D05 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9BF0F2B01AC517B2003A7D05 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		9BF154791A9DBD6F003267F1 /* CameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,19 +179,19 @@
 		9B22BA901A9BC7800042B037 /* SignatureApp */ = {
 			isa = PBXGroup;
 			children = (
+				9B22BA981A9BC7810042B037 /* LoginViewController.swift */,
+				9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */,
 				9B36A3A81A9BDA190094E43E /* AlbumViewController.swift */,
+				9B36A3A41A9BD3B20094E43E /* AlbumViewCell.swift */,
 				9B7FADFE1AF1A2D000805EDE /* AlbumCover.swift */,
+				9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */,
+				9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */,
+				9B5C19CC1AFAE67F0055D7C3 /* PhotoSignViewController.swift */,
 				9BECA2351AC0C0A300E7A66C /* PhotoSign.swift */,
 				9BECA2371AC0C28D00E7A66C /* Line.swift */,
 				9BF0F2991AC515B3003A7D05 /* SignatureApp-Bridging-Header.h */,
+				9B5C19C61AF816960055D7C3 /* Main.storyboard */,
 				9B22BA931A9BC7800042B037 /* AppDelegate.swift */,
-				9B22BA981A9BC7810042B037 /* ViewController.swift */,
-				9B22BA9A1A9BC7810042B037 /* Main.storyboard */,
-				9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */,
-				9BF154791A9DBD6F003267F1 /* CameraButton.swift */,
-				9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */,
-				9B36A3A41A9BD3B20094E43E /* AlbumViewCell.swift */,
-				9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */,
 				9B22BA9D1A9BC7810042B037 /* Images.xcassets */,
 				9B22BA9F1A9BC7810042B037 /* LaunchScreen.xib */,
 				9B22BA951A9BC7810042B037 /* SignatureApp.xcdatamodeld */,
@@ -356,8 +356,8 @@
 				9B36A3AE1A9BE0890094E43E /* Disneyland.jpg in Resources */,
 				9B36A3B11A9BE0890094E43E /* Warriors.jpg in Resources */,
 				9BE910EF1A9C7A5B00AA5002 /* lilo.jpg in Resources */,
-				9B22BA9C1A9BC7810042B037 /* Main.storyboard in Resources */,
 				9BE910EE1A9C7A5B00AA5002 /* mulan.jpg in Resources */,
+				9B5C19C71AF816960055D7C3 /* Main.storyboard in Resources */,
 				9BE910EA1A9C7A5B00AA5002 /* elsa.jpg in Resources */,
 				9BE910E71A9C7A5B00AA5002 /* tangled.jpg in Resources */,
 				9B36A3AF1A9BE0890094E43E /* Disneyworld.jpg in Resources */,
@@ -385,13 +385,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B22BA991A9BC7810042B037 /* ViewController.swift in Sources */,
+				9B22BA991A9BC7810042B037 /* LoginViewController.swift in Sources */,
 				9B36A3A91A9BDA190094E43E /* AlbumViewController.swift in Sources */,
-				9BF1547A1A9DBD6F003267F1 /* CameraButton.swift in Sources */,
 				9BCF977A1ADF91C000B16059 /* RegistrationViewController.swift in Sources */,
 				9B22BA971A9BC7810042B037 /* SignatureApp.xcdatamodeld in Sources */,
 				9B36A3A51A9BD3B20094E43E /* AlbumViewCell.swift in Sources */,
 				9BE910DD1A9C6EFF00AA5002 /* PhotoViewController.swift in Sources */,
+				9B5C19CD1AFAE67F0055D7C3 /* PhotoSignViewController.swift in Sources */,
 				9BE910DB1A9C6D6C00AA5002 /* PhotoCell.swift in Sources */,
 				9BECA2361AC0C0A300E7A66C /* PhotoSign.swift in Sources */,
 				9B22BA941A9BC7800042B037 /* AppDelegate.swift in Sources */,
@@ -419,14 +419,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9B22BA9A1A9BC7810042B037 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B22BA9B1A9BC7810042B037 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9B22BA9F1A9BC7810042B037 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
