@@ -30,6 +30,10 @@
 		9B8639F71AF1B69100D69AED /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8639EB1AF1ACDC00D69AED /* ParseFacebookUtilsV4.framework */; };
 		9B8639F81AF1B69100D69AED /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8639EC1AF1ACDC00D69AED /* ParseUI.framework */; };
 		9BCF977A1ADF91C000B16059 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */; };
+		9BD32AF31B0A7E5300A7A634 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD32AF21B0A7E5200A7A634 /* FBSDKCoreKit.framework */; };
+		9BD32AF51B0A7E9C00A7A634 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD32AF41B0A7E9C00A7A634 /* FBSDKLoginKit.framework */; };
+		9BD32B431B0F30E700A7A634 /* CombineImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32B421B0F30E700A7A634 /* CombineImagesViewController.swift */; };
+		9BD32B451B15351700A7A634 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32B441B15351700A7A634 /* Signature.swift */; };
 		9BE910DB1A9C6D6C00AA5002 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */; };
 		9BE910DD1A9C6EFF00AA5002 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */; };
 		9BE910E71A9C7A5B00AA5002 /* tangled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */; };
@@ -94,6 +98,10 @@
 		9B8639EB1AF1ACDC00D69AED /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "parse-library-1.7.2/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
 		9B8639EC1AF1ACDC00D69AED /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "parse-library-1.7.2/ParseUI.framework"; sourceTree = "<group>"; };
 		9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		9BD32AF21B0A7E5200A7A634 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		9BD32AF41B0A7E9C00A7A634 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		9BD32B421B0F30E700A7A634 /* CombineImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineImagesViewController.swift; sourceTree = "<group>"; };
+		9BD32B441B15351700A7A634 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
 		9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tangled.jpg; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD32AF51B0A7E9C00A7A634 /* FBSDKLoginKit.framework in Frameworks */,
+				9BD32AF31B0A7E5300A7A634 /* FBSDKCoreKit.framework in Frameworks */,
 				9B8639F31AF1B69100D69AED /* Bolts.framework in Frameworks */,
 				9B8639F41AF1B69100D69AED /* Parse.framework in Frameworks */,
 				9B8639F51AF1B69100D69AED /* ParseCrashReporting.framework in Frameworks */,
@@ -159,7 +169,8 @@
 		9B22BA851A9BC7800042B037 = {
 			isa = PBXGroup;
 			children = (
-				9B8639E61AF1ACDC00D69AED /* parse-library-1.7.2 */,
+				9BD32AF41B0A7E9C00A7A634 /* FBSDKLoginKit.framework */,
+				9BD32AF21B0A7E5200A7A634 /* FBSDKCoreKit.framework */,
 				9BF0F2B21AC51CE4003A7D05 /* ParseFramework */,
 				9B22BA901A9BC7800042B037 /* SignatureApp */,
 				9B22BAA91A9BC7810042B037 /* SignatureAppTests */,
@@ -189,6 +200,8 @@
 				9B5C19CC1AFAE67F0055D7C3 /* PhotoSignViewController.swift */,
 				9BECA2351AC0C0A300E7A66C /* PhotoSign.swift */,
 				9BECA2371AC0C28D00E7A66C /* Line.swift */,
+				9BD32B421B0F30E700A7A634 /* CombineImagesViewController.swift */,
+				9BD32B441B15351700A7A634 /* Signature.swift */,
 				9BF0F2991AC515B3003A7D05 /* SignatureApp-Bridging-Header.h */,
 				9B5C19C61AF816960055D7C3 /* Main.storyboard */,
 				9B22BA931A9BC7800042B037 /* AppDelegate.swift */,
@@ -237,13 +250,6 @@
 				9B22BAAB1A9BC7810042B037 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9B8639E61AF1ACDC00D69AED /* parse-library-1.7.2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "parse-library-1.7.2";
 			sourceTree = "<group>";
 		};
 		9BF0F2B21AC51CE4003A7D05 /* ParseFramework */ = {
@@ -387,6 +393,7 @@
 			files = (
 				9B22BA991A9BC7810042B037 /* LoginViewController.swift in Sources */,
 				9B36A3A91A9BDA190094E43E /* AlbumViewController.swift in Sources */,
+				9BD32B451B15351700A7A634 /* Signature.swift in Sources */,
 				9BCF977A1ADF91C000B16059 /* RegistrationViewController.swift in Sources */,
 				9B22BA971A9BC7810042B037 /* SignatureApp.xcdatamodeld in Sources */,
 				9B36A3A51A9BD3B20094E43E /* AlbumViewCell.swift in Sources */,
@@ -394,6 +401,7 @@
 				9B5C19CD1AFAE67F0055D7C3 /* PhotoSignViewController.swift in Sources */,
 				9BE910DB1A9C6D6C00AA5002 /* PhotoCell.swift in Sources */,
 				9BECA2361AC0C0A300E7A66C /* PhotoSign.swift in Sources */,
+				9BD32B431B0F30E700A7A634 /* CombineImagesViewController.swift in Sources */,
 				9B22BA941A9BC7800042B037 /* AppDelegate.swift in Sources */,
 				9BECA2381AC0C28D00E7A66C /* Line.swift in Sources */,
 				9B7FADFF1AF1A2D000805EDE /* AlbumCover.swift in Sources */,
@@ -522,6 +530,8 @@
 					"/Users/yayadrevis/Desktop/parse-library-1",
 					"/Users/ryanchee/Downloads/parse-library-1.7.2",
 					"$(PROJECT_DIR)/parse-library-1.7.2",
+					"$(PROJECT_DIR)/parse-library-1.7.2/FacebookSDK",
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = SignatureApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -545,6 +555,8 @@
 					"/Users/yayadrevis/Desktop/parse-library-1",
 					"/Users/ryanchee/Downloads/parse-library-1.7.2",
 					"$(PROJECT_DIR)/parse-library-1.7.2",
+					"$(PROJECT_DIR)/parse-library-1.7.2/FacebookSDK",
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = SignatureApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

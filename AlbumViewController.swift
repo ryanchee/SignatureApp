@@ -116,8 +116,9 @@ class AlbumViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func populateAlbumArray() {
         var currentUser = PFUser.currentUser()!.username
+        println(currentUser)
         var query = PFQuery(className:"Albums")
-        query.whereKey("Name", equalTo:"ronald")
+        query.whereKey("Name", equalTo:currentUser!)
         query.findObjectsInBackgroundWithBlock ({(objects:[AnyObject]?, error: NSError?) in
             if(error == nil){
                 

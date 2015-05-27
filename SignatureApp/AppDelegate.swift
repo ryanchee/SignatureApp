@@ -22,7 +22,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         object.addObject("Banana", forKey: "favoriteFood")
         object.addObject("Chocolate", forKey: "favoriteIceCream")
         object.save() */
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    func application(application: UIApplication,
+        openURL url: NSURL,
+        sourceApplication: String?,
+        annotation: AnyObject?) -> Bool {
+            return FBSDKApplicationDelegate.sharedInstance().application(
+                application,
+                openURL: url,
+                sourceApplication: sourceApplication,
+                annotation: annotation)
     }
 
     func applicationWillResignActive(application: UIApplication) {

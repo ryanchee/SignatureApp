@@ -10,9 +10,18 @@ import UIKit
 
 class PhotoSignViewController: UIViewController {
     var photo: UIImage?
-    
+    var albumName: String?
+    var signatureNameField: UITextField?
+    var signatureName: String?
+
     @IBOutlet var photoSignView: PhotoSign?
-    
+
+    @IBAction func signatureName(sender: AnyObject) {
+          }
+//    @IBAction func scaleImage(sender: UIPinchGestureRecognizer) {
+//        self.view.transform = CGAffineTransformScale(self.view.transform, sender.scale, sender.scale)
+//        sender.scale = 1
+//    }
     @IBAction func clearTapped() {
         println("Clear button tapped")
         photoSignView?.lines = []
@@ -55,19 +64,49 @@ class PhotoSignViewController: UIViewController {
         //add signature to parse database
  //       if let signed = photoSignView?.isSigned() {
             if photoSignView?.signed == true {
-                var signature = PFObject(className:"Signatures")
-                signature["username"] = PFUser.currentUser()!.username
-                UIGraphicsBeginImageContext(photoSignView!.frame.size)
-                photoSignView!.drawViewHierarchyInRect(photoSignView!.bounds, afterScreenUpdates: true)
+                let actionSheetController: UIAlertController = UIAlertController(title: "Alert", message: "Enter Signature Name:", preferredStyle: .Alert)
                 
-                var signatureSaved = UIGraphicsGetImageFromCurrentImageContext()
-                UIGraphicsEndImageContext()
-                let imageData = UIImagePNGRepresentation(signatureSaved)
-                let imageFile = PFFile(name:"image.png", data: imageData)
-                signature["signature"] = imageFile
-                signature["signatureName"] = "temp"
-                signature.saveInBackgroundWithTarget(nil, selector: nil)
-                println("ended here")
+                //Create and add the Cancel action
+                let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { [unowned self] action -> Void in
+                    //Do some stuff
+                }
+                actionSheetController.addAction(cancelAction)
+                //Create and an option action
+                let nextAction: UIAlertAction = UIAlertAction(title: "Ok", style: .Default) { [unowned self] action -> Void in
+                    if self.signatureNameField?.text != nil {
+                        self.signatureName = self.signatureNameField!.text
+                        println(self.signatureName)
+                    }
+                    
+                    var signature = PFObject(className:"Signatures")
+                    //                var signature = PFObject(className: "UserPhoto")
+                    //                signature["Name"] = PFUser.currentUser()!.username
+                    signature["username"] = PFUser.currentUser()!.username
+                    UIGraphicsBeginImageContext(self.photoSignView!.frame.size)
+                    self.photoSignView!.drawViewHierarchyInRect(self.photoSignView!.bounds, afterScreenUpdates: true)
+                    
+                    var signatureSaved = UIGraphicsGetImageFromCurrentImageContext()
+                    UIGraphicsEndImageContext()
+                    let imageData = UIImagePNGRepresentation(signatureSaved)
+                    let imageFile = PFFile(name:"image.png", data: imageData)
+                    //signatures in parse
+                    signature["signature"] = imageFile
+                    signature["signatureName"] = self.signatureName
+                    signature.saveInBackgroundWithTarget(nil, selector: nil)
+                    self.navigationController!.popViewControllerAnimated(true)
+                    println("done signature")
+                    
+                }
+                actionSheetController.addAction(nextAction)
+                //Add a text field
+                actionSheetController.addTextFieldWithConfigurationHandler { [unowned self]     textField -> Void in
+                    //TextField configuration
+                    textField.textColor = UIColor.blackColor()
+                    self.signatureNameField = textField
+                }
+                
+                //Present the AlertController
+                self.presentViewController(actionSheetController, animated: true, completion: nil)
             }
 //        }
         else {
@@ -93,7 +132,9 @@ class PhotoSignViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoSignView!.backgroundColor = UIColor(patternImage: photo!.imageWithAlignmentRectInsets(UIEdgeInsets(top:10,left:0,bottom:10,right:0)))
+//        photoSignView!.image = photo
+//        photoSignView?.contentMode = .ScaleAspectFit
+//        photoSignView!.backgroundColor = UIColor(patternImage: photo!.imageWithAlignmentRectInsets(UIEdgeInsets(top:10,left:0,bottom:10,right:0)))
         // Do any additional setup after loading the view.
     }
 
@@ -108,16 +149,7 @@ class PhotoSignViewController: UIViewController {
         var randomBlue: CGFloat = CGFloat(drand48())
         return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
     }
-    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

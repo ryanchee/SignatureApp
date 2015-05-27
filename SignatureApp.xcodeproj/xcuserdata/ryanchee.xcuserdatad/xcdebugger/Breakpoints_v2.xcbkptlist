@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlbumViewController.swift"
-            timestampString = "453185957.973324"
+            timestampString = "453676361.077535"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "populateAlbumArray()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignatureApp/PhotoViewController.swift"
-            timestampString = "453188277.544889"
+            timestampString = "454395108.388588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SignatureApp/RegistrationViewController.swift"
-            timestampString = "450862250.058265"
+            filePath = "SignatureApp/CombineImagesViewController.swift"
+            timestampString = "454394330.864713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "registerButton()"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "pickSignature(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

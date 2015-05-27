@@ -18,6 +18,18 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     var imageSelected: UIImage?
     var albumName: String?
     
+    @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
+        if let view = recognizer.view {
+            if recognizer.state == UIGestureRecognizerState.Ended {
+                println("in reload view")
+                photoLibraryImages = []
+                populateAlbum(self.albumName!)
+                view.setNeedsDisplay()
+//            self.collectionView.reloadData()
+            }
+        }
+    }
+    
     @IBAction func addPhoto(sender: AnyObject) {
         let alertController = UIAlertController(title: "Choose photo from...", message: nil, preferredStyle: .ActionSheet)
         
@@ -25,7 +37,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             println(action)
         }
         alertController.addAction(cancelAction)
-        let oneAction = UIAlertAction(title: "Camera", style: .Default) { (_) in
+        let oneAction = UIAlertAction(title: "Camera", style: .Default) { [unowned self] (_) in
             let picker = UIImagePickerController()
             picker.delegate = self
             if UIImagePickerController.isSourceTypeAvailable(.Camera) {
@@ -36,16 +48,21 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             }
             self.presentViewController(picker, animated: true, completion: nil)
         }
-        let twoAction = UIAlertAction(title: "Photo Album", style: .Default) { (_) in
+        let twoAction = UIAlertAction(title: "Photo Album", style: .Default) { [unowned self] (_) in
             let picker = UIImagePickerController()
             picker.delegate = self
             picker.sourceType = .PhotoLibrary
             picker.allowsEditing = false
             self.presentViewController(picker, animated: true, completion: nil)
         }
+        
+        let signatureAction = UIAlertAction(title: "Signature", style: .Default) { [unowned self] (_) in
+            self.performSegueWithIdentifier("signature", sender: self)
+        }
 
         alertController.addAction(oneAction)
         alertController.addAction(twoAction)
+        alertController.addAction(signatureAction)
         self.presentViewController(alertController, animated: true, completion: nil)
 
     }
@@ -81,7 +98,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        println("we got an image\n");
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
         println("BEFORE there are \(photoLibraryImages.count) images")
         photoLibraryImages.append(chosenImage)
@@ -123,7 +139,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     func populateAlbum(albumName: String) {
         var currentUser = PFUser.currentUser()!.username
         var query = PFQuery(className:"UserPhoto")
-        query.whereKey("Name", equalTo:"ronald")
+        query.whereKey("Name", equalTo:currentUser!)
         query.whereKey("AlbumName", equalTo:albumName)
         query.findObjectsInBackgroundWithBlock ({(objects:[AnyObject]?, error: NSError?) in
             if(error == nil){
@@ -151,12 +167,11 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             else{
                 println("Error in retrieving \(error)")
             }
-            
         })//findObjectsInBackgroundWithblock - end
-        
-        
     }
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("should load\n");
@@ -171,12 +186,24 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "PhotoEdit" {
+        if segue.identifier == "combineImages" {
+            let dest = segue.destinationViewController as! CombineImagesViewController
+            let cell = sender as! PhotoCell
+            let index = self.photoCollectionView!.indexPathForCell(cell)?.row
+            dest.photo = photoLibraryImages[index!]
+            dest.albumName = self.albumName
+            // grab all signatures for the view controller
+        }
+            //signaturecell
+        else if segue.identifier == "signaturecell" {
             let dest = segue.destinationViewController as! PhotoSignViewController
             let cell = sender as! PhotoCell
             let index = self.photoCollectionView!.indexPathForCell(cell)?.row
             dest.photo = photoLibraryImages[index!]
+            // grab all signatures for the view controller
+//            dest.signatures = self.signatures
         }
+        println("\(segue.identifier)")
     }
 
     /*
@@ -189,4 +216,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     */
 
+    //when hit +, show uialertcontroller with the following options 
+    // picture + sign
+    // existing picture
+    // just signature (blank page no photo loaded)
 }

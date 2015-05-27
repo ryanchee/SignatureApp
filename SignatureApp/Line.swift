@@ -18,7 +18,5 @@ class Line {
         end = _end
         color = _color
     }
-    
-    
-
 }
+
