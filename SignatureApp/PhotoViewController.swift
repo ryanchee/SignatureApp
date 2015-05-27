@@ -25,7 +25,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                 photoLibraryImages = []
                 populateAlbum(self.albumName!)
                 view.setNeedsDisplay()
-//            self.collectionView.reloadData()
             }
         }
     }
@@ -99,11 +98,9 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
-        println("BEFORE there are \(photoLibraryImages.count) images")
         photoLibraryImages.append(chosenImage)
         dismissViewControllerAnimated(true, completion: nil) //5
         self.collectionView.reloadData()
-        println("AFTER there are \(photoLibraryImages.count) images")
         
         let imageData = UIImagePNGRepresentation(chosenImage)
         let imageFile = PFFile(name:"image.png", data: imageData)
@@ -118,7 +115,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        println("there are \(photoLibraryImages.count) images")
+//        println("there are \(photoLibraryImages.count) images")
         return photoLibraryImages.count
     }
     
@@ -132,8 +129,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         collectionView.deselectItemAtIndexPath(indexPath, animated: true)
         println("PhotoViewCell \(indexPath.row) selected");
         let cell: PhotoCell = collectionView.cellForItemAtIndexPath(indexPath) as! PhotoCell
-      //  imageSelected = cell.photoCell.image!
-//        performSegueWithIdentifier("PhotoEdit", sender: self)
     }
     
     func populateAlbum(albumName: String) {
@@ -192,32 +187,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
             let index = self.photoCollectionView!.indexPathForCell(cell)?.row
             dest.photo = photoLibraryImages[index!]
             dest.albumName = self.albumName
-            // grab all signatures for the view controller
-        }
-            //signaturecell
-        else if segue.identifier == "signaturecell" {
-            let dest = segue.destinationViewController as! PhotoSignViewController
-            let cell = sender as! PhotoCell
-            let index = self.photoCollectionView!.indexPathForCell(cell)?.row
-            dest.photo = photoLibraryImages[index!]
-            // grab all signatures for the view controller
-//            dest.signatures = self.signatures
         }
         println("\(segue.identifier)")
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    //when hit +, show uialertcontroller with the following options 
-    // picture + sign
-    // existing picture
-    // just signature (blank page no photo loaded)
 }

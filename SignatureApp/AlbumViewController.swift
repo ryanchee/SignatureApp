@@ -14,8 +14,6 @@ class AlbumViewController: UIViewController, UICollectionViewDataSource, UIColle
     var albumCovers: [AlbumCover] = []
     var albumNameField: UITextField?
     var albumName: String!
-//    var tableData: [String] = ["Disneyland", "Disneyworld", "Warriors", "DOTA2: TI5"]
-//    var tableImages: [String] = ["Disneyland.jpg", "Disneyworld.jpg", "Warriors.jpg", "ti5.jpg"]
     
     
     @IBAction func addAlbum(sender: AnyObject) {
@@ -43,9 +41,6 @@ class AlbumViewController: UIViewController, UICollectionViewDataSource, UIColle
             }
             self.presentViewController(picker, animated: true, completion: nil)
 
-            //                self.performSegueWithIdentifier("AlbumViewOpen", sender: self)
-            //                self.albumName = "Hawaii"
-            //Do some other stuff
         }
         actionSheetController.addAction(nextAction)
         //Add a text field

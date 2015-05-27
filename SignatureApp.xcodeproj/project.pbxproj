@@ -14,7 +14,6 @@
 		9B22BAA11A9BC7810042B037 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B22BA9F1A9BC7810042B037 /* LaunchScreen.xib */; };
 		9B22BAAD1A9BC7810042B037 /* SignatureAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22BAAC1A9BC7810042B037 /* SignatureAppTests.swift */; };
 		9B36A3A51A9BD3B20094E43E /* AlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36A3A41A9BD3B20094E43E /* AlbumViewCell.swift */; };
-		9B36A3A91A9BDA190094E43E /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36A3A81A9BDA190094E43E /* AlbumViewController.swift */; };
 		9B36A3AE1A9BE0890094E43E /* Disneyland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3AA1A9BE0890094E43E /* Disneyland.jpg */; };
 		9B36A3AF1A9BE0890094E43E /* Disneyworld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3AB1A9BE0890094E43E /* Disneyworld.jpg */; };
 		9B36A3B01A9BE0890094E43E /* ti5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36A3AC1A9BE0890094E43E /* ti5.jpg */; };
@@ -34,6 +33,8 @@
 		9BD32AF51B0A7E9C00A7A634 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD32AF41B0A7E9C00A7A634 /* FBSDKLoginKit.framework */; };
 		9BD32B431B0F30E700A7A634 /* CombineImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32B421B0F30E700A7A634 /* CombineImagesViewController.swift */; };
 		9BD32B451B15351700A7A634 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32B441B15351700A7A634 /* Signature.swift */; };
+		9BD32B471B1587DF00A7A634 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32B461B1587DF00A7A634 /* AlbumViewController.swift */; };
+		9BD32B491B1587F300A7A634 /* PhotoSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32B481B1587F300A7A634 /* PhotoSign.swift */; };
 		9BE910DB1A9C6D6C00AA5002 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */; };
 		9BE910DD1A9C6EFF00AA5002 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */; };
 		9BE910E71A9C7A5B00AA5002 /* tangled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */; };
@@ -45,7 +46,6 @@
 		9BE910ED1A9C7A5B00AA5002 /* anna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE910E41A9C7A5B00AA5002 /* anna.jpg */; };
 		9BE910EE1A9C7A5B00AA5002 /* mulan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE910E51A9C7A5B00AA5002 /* mulan.jpg */; };
 		9BE910EF1A9C7A5B00AA5002 /* lilo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE910E61A9C7A5B00AA5002 /* lilo.jpg */; };
-		9BECA2361AC0C0A300E7A66C /* PhotoSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BECA2351AC0C0A300E7A66C /* PhotoSign.swift */; };
 		9BECA2381AC0C28D00E7A66C /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BECA2371AC0C28D00E7A66C /* Line.swift */; };
 		9BF0F29D1AC51756003A7D05 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF0F29C1AC51756003A7D05 /* AudioToolbox.framework */; };
 		9BF0F29F1AC5175C003A7D05 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF0F29E1AC5175C003A7D05 /* CFNetwork.framework */; };
@@ -82,7 +82,6 @@
 		9B22BAAB1A9BC7810042B037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B22BAAC1A9BC7810042B037 /* SignatureAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureAppTests.swift; sourceTree = "<group>"; };
 		9B36A3A41A9BD3B20094E43E /* AlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewCell.swift; sourceTree = "<group>"; };
-		9B36A3A81A9BDA190094E43E /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumViewController.swift; path = ../AlbumViewController.swift; sourceTree = "<group>"; };
 		9B36A3AA1A9BE0890094E43E /* Disneyland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Disneyland.jpg; sourceTree = "<group>"; };
 		9B36A3AB1A9BE0890094E43E /* Disneyworld.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Disneyworld.jpg; sourceTree = "<group>"; };
 		9B36A3AC1A9BE0890094E43E /* ti5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ti5.jpg; sourceTree = "<group>"; };
@@ -102,6 +101,9 @@
 		9BD32AF41B0A7E9C00A7A634 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		9BD32B421B0F30E700A7A634 /* CombineImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineImagesViewController.swift; sourceTree = "<group>"; };
 		9BD32B441B15351700A7A634 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		9BD32B461B1587DF00A7A634 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		9BD32B481B1587F300A7A634 /* PhotoSign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSign.swift; sourceTree = "<group>"; };
+		9BD32B4B1B15883000A7A634 /* SignatureApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignatureApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		9BE910DE1A9C7A5B00AA5002 /* tangled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tangled.jpg; sourceTree = "<group>"; };
@@ -113,9 +115,7 @@
 		9BE910E41A9C7A5B00AA5002 /* anna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = anna.jpg; sourceTree = "<group>"; };
 		9BE910E51A9C7A5B00AA5002 /* mulan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mulan.jpg; sourceTree = "<group>"; };
 		9BE910E61A9C7A5B00AA5002 /* lilo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lilo.jpg; sourceTree = "<group>"; };
-		9BECA2351AC0C0A300E7A66C /* PhotoSign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoSign.swift; path = ../PhotoSign.swift; sourceTree = "<group>"; };
 		9BECA2371AC0C28D00E7A66C /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		9BF0F2991AC515B3003A7D05 /* SignatureApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignatureApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		9BF0F29C1AC51756003A7D05 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9BF0F29E1AC5175C003A7D05 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9BF0F2A01AC51761003A7D05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -192,17 +192,17 @@
 			children = (
 				9B22BA981A9BC7810042B037 /* LoginViewController.swift */,
 				9BCF97791ADF91C000B16059 /* RegistrationViewController.swift */,
-				9B36A3A81A9BDA190094E43E /* AlbumViewController.swift */,
+				9BD32B461B1587DF00A7A634 /* AlbumViewController.swift */,
 				9B36A3A41A9BD3B20094E43E /* AlbumViewCell.swift */,
 				9B7FADFE1AF1A2D000805EDE /* AlbumCover.swift */,
 				9BE910DC1A9C6EFF00AA5002 /* PhotoViewController.swift */,
 				9BE910DA1A9C6D6C00AA5002 /* PhotoCell.swift */,
 				9B5C19CC1AFAE67F0055D7C3 /* PhotoSignViewController.swift */,
-				9BECA2351AC0C0A300E7A66C /* PhotoSign.swift */,
+				9BD32B481B1587F300A7A634 /* PhotoSign.swift */,
 				9BECA2371AC0C28D00E7A66C /* Line.swift */,
 				9BD32B421B0F30E700A7A634 /* CombineImagesViewController.swift */,
 				9BD32B441B15351700A7A634 /* Signature.swift */,
-				9BF0F2991AC515B3003A7D05 /* SignatureApp-Bridging-Header.h */,
+				9BD32B4B1B15883000A7A634 /* SignatureApp-Bridging-Header.h */,
 				9B5C19C61AF816960055D7C3 /* Main.storyboard */,
 				9B22BA931A9BC7800042B037 /* AppDelegate.swift */,
 				9B22BA9D1A9BC7810042B037 /* Images.xcassets */,
@@ -392,18 +392,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B22BA991A9BC7810042B037 /* LoginViewController.swift in Sources */,
-				9B36A3A91A9BDA190094E43E /* AlbumViewController.swift in Sources */,
 				9BD32B451B15351700A7A634 /* Signature.swift in Sources */,
 				9BCF977A1ADF91C000B16059 /* RegistrationViewController.swift in Sources */,
 				9B22BA971A9BC7810042B037 /* SignatureApp.xcdatamodeld in Sources */,
 				9B36A3A51A9BD3B20094E43E /* AlbumViewCell.swift in Sources */,
+				9BD32B471B1587DF00A7A634 /* AlbumViewController.swift in Sources */,
 				9BE910DD1A9C6EFF00AA5002 /* PhotoViewController.swift in Sources */,
 				9B5C19CD1AFAE67F0055D7C3 /* PhotoSignViewController.swift in Sources */,
 				9BE910DB1A9C6D6C00AA5002 /* PhotoCell.swift in Sources */,
-				9BECA2361AC0C0A300E7A66C /* PhotoSign.swift in Sources */,
 				9BD32B431B0F30E700A7A634 /* CombineImagesViewController.swift in Sources */,
 				9B22BA941A9BC7800042B037 /* AppDelegate.swift in Sources */,
 				9BECA2381AC0C28D00E7A66C /* Line.swift in Sources */,
+				9BD32B491B1587F300A7A634 /* PhotoSign.swift in Sources */,
 				9B7FADFF1AF1A2D000805EDE /* AlbumCover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
